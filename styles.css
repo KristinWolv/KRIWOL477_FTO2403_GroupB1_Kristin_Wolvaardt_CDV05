@@ -60,7 +60,7 @@ nav ul a:hover{
 }
 
 .btn{
-    padding: 0.5 1em;
+    padding: 1em 3em;
     color: white;
     font-weight: 400;
     letter-spacing: 1px;
@@ -69,11 +69,37 @@ nav ul a:hover{
     border: 2px solid white;
     cursor: pointer;
     transition: 0.3 ease-in-out;
+    display: inline-block; 
+    text-align: center;
 }
 
 .btn:hover{
     background-color: white;
     color: var(--background);
+    border-color: var(--background);
+}
+
+.bnt-box .btn:nth-child(1) {
+    background-color: white;
+    color: var(--background);
+    border: 2px solid var(--background);
+}
+
+.bnt-box .btn:nth-child(1):hover {
+    background-color: var(--background);
+    color: white;
+    border: 2px solid white;
+}
+
+.bnt-box .btn {
+    margin: 1em 0.5em;
+}
+
+form .btn {
+    padding: 0.8em 2em;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
 span{
@@ -304,7 +330,7 @@ form input:focus{
 
 footer{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 10em;
     bottom: 0;
